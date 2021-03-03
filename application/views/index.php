@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Index</title>
+
+<style>
+*
+{
+    padding: 0px;
+    margin:0px;
+}
+body
+{
+    
+}
+
+.a
+{
+    
+    width:450px;
+    height:500px;
+    padding:20px;
+    text-align:center;
+    position:relative;
+    left:400px;
+    
+}
+
+.menubar
+{
+    background-color:black;
+    text-align:center;
+}
+.menubar ul
+{
+    list-style:none;
+    display:inline-flex;
+}
+.menubar ul li a
+{
+    color:white;
+    text-decoration:none;
+}
+.submenu
+{
+    display:none;
+}
+.menubar ul li
+{
+    padding:15px;
+}
+.menubar ul li:hover
+{
+    background-color:#ff0000;
+    border-radius:10px;
+}
+.menubar ul li:hover .submenu
+{
+    display:block;
+    position:absolute;
+    background-color:black;
+    margin-top:15px;
+    margin-left:-20px;
+    border-radius:10px;
+    padding:15px;
+    
+}
+.menubar ul li:hover .submenu ul
+{
+    display:block;
+    margin-left:-20px;
+}
+.menubar ul li:hover .submenu ul li
+{
+    padding:10px;
+    border-bottom:1px solid #ff0000;
+}
+h1{ 
+	position:absolute;
+	font-size:40;
+	color:red;
+	margin-top:200px;
+	margin-left:410px;
+	text-align: center;
+}
+</style>
+
+
+</style>
+</head>
+<body>
+<nav class="menubar">
+    <ul>
+        <li><a href="<?php echo base_url()?>main/index">Home</a></li>
+        <li><a href="<?php echo base_url()?>main/registration"> Registration</a>
+            
+                <li><a href="<?php echo base_url()?>main/login">Login</a></li>
+            </div>
+        </li>
+    </ul>
+</nav>
+<h1>Account Management System</h1>
+
+</body>
+</html>
